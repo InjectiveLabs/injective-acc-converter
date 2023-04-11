@@ -1,8 +1,8 @@
-#Injective Address Converter
+# Injective Address Converter
 
 This code is a simple command-line tool that converts an Injective address to a subaccount ID. It is written in Go and uses the Cosmos SDK and Ethereum libraries.
 
-##Installation
+## Installation
 
 To use this code, you will need to have Go installed on your machine. You can then download and compile the code using the following commands:
 
@@ -12,7 +12,7 @@ git clone https://github.com/InjectiveLabs/injective-acc-converter.git
 cd injective-acc-converter
 go build
 
-##Usage
+## Usage
 
 To convert an Injective address to a subaccount ID, simply run the main executable with the address as a parameter:
 
