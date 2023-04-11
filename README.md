@@ -27,5 +27,3 @@ Replace <account_address> with the Injective chain account address that you want
 ```
 
 This will output the hexadecimal representation of the first 20 bytes of the account address, padded with zeros to 24 digits.
-
-You ca
