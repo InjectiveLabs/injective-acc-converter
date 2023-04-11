@@ -6,24 +6,26 @@ This code is a simple command-line tool that converts an Injective address to a 
 
 To use this code, you will need to have Go installed on your machine. You can then download and compile the code using the following commands:
 
-bash
-
+```bash
 git clone https://github.com/InjectiveLabs/injective-acc-converter.git
 cd injective-acc-converter
-go build
+go run main.go --address=<account_address>
+```
 
 ## Usage
 
-To convert an Injective address to a subaccount ID, simply run the main executable with the address as a parameter:
+To convert an Injective address to a subaccount ID, run the following command:
 
-bash
+```bash
+./injective-acc-converter --address=<account_address>
+```
 
-./main inj1hkhdaj2a2clmq5jq6mspsggqs32vynpk228q3r
+Replace <account_address> with the Injective chain account address that you want to convert. For example:
 
-The output will be the subaccount ID in hexadecimal format.
-Contributing
+```go
+./injective-acc-converter --address=inj1hkhdaj2a2clmq5jq6mspsggqs32vynpk228q3r
+```
 
-We welcome contributions to this codebase. If you would like to contribute, please fork this repository, make your changes, and submit a pull request.
-License
+This will output the hexadecimal representation of the first 20 bytes of the account address, padded with zeros to 24 digits.
 
-This code is licensed under the MIT License. Please see the LICENSE file for more information.
+You ca
